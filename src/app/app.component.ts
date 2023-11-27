@@ -2,12 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { initFlowbite } from 'flowbite';
-import { NavbarComponent } from './shared/navbar/navbar.component';
+import { MainComponent } from './productos/main.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet,NavbarComponent],
+  imports: [CommonModule, RouterOutlet,MainComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
