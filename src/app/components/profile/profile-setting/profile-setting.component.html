@@ -1,0 +1,65 @@
+<div class="min-h-screen bg-white space-y-6 p-4 md:p-10 pb-16">
+  <div class="space-y-0.5">
+    <h2 class="text-2xl font-bold tracking-tight">Configuraciones</h2>
+    <p class="text-muted-foreground">
+        Tu cuenta personal
+    </p>
+  </div>
+  <!-- Seperator -->
+  <div class="shrink-0 bg-border h-[1px] w-full"></div>
+  <div class="flex flex-col space-y-8 md:flex-row md:space-x-12 md:space-y-0">
+    <nav class="flex flex-wrap space-x-2 md:flex-col md:space-x-0 md:space-y-1">
+      <a
+        class="inline-flex items-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:text-accent-foreground h-9 px-4 py-2 hover:bg-transparent hover:underline justify-start"
+        
+        >Perfil</a
+      ><a
+        class="inline-flex items-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:text-accent-foreground h-9 px-4 py-2 hover:bg-transparent hover:underline justify-start"
+        
+        >Cambiar Contraseña</a
+      >
+    </nav>
+
+    <div class="flex-1 md:max-w-2xl">
+      <!-- About Page Content -->
+      <div class="px-4">
+          <h2 class="text-lg font-bold tracking-tight">Perfil</h2>
+      </div>
+      <div>
+          <div class="py-8 px-4 mx-auto max-w-2xl">
+                <form action="#">
+                    <div class="grid gap-4 sm:grid-cols-2 sm:gap-6">
+                        <div class="w-full">
+                            <label for="brand" class="block mb-2 text-sm font-medium text-[#121212]">Nombre</label>
+                            <input type="text" name="brand" id="brand" class="bg-gray-50 border border-gray-300 text-[#121212] text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5" required="">
+                        </div>
+                        <div class="w-full">
+                            <label for="brand" class="block mb-2 text-sm font-medium text-[#121212]">Apellido</label>
+                            <input type="text" name="brand" id="brand" class="bg-gray-50 border border-gray-300 text-[#121212] text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5" required="">
+                        </div>
+                        <div class="w-full">
+                            <label for="brand" class="block mb-2 text-sm font-medium text-[#121212]">Correo</label>
+                            <input type="text" name="brand" id="brand" class="bg-gray-50 border border-gray-300 text-[#121212] text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5" required="">
+                        </div>
+                        <div>
+                            <label for="category" class="block mb-2 text-sm font-medium text-[#121212] dark:text-white">Sexo</label>
+                            <select id="category" class="bg-gray-50 border border-gray-300 text-[#121212] text-sm rounded-lg focus:ring-[#3b82f6] focus:border-[#3b82f6] block w-full p-2.5">
+                                <option selected="">No especificado</option>
+                                <option value="M">Hombre</option>
+                                <option value="F">Mujer</option>
+                            </select>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label for="description" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Descripcion</label>
+                            <textarea id="description" rows="8" class="block p-2.5 w-full text-sm text-[#121212] bg-gray-50 rounded-lg border border-gray-300 focus:ring-[#3b82f6] focus:border-[#3b82f6]"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-[#f2f2f2] bg-[#1d4ed8] rounded-lg focus:ring-4 focus:ring-[#bfdbfe] hover:bg-[#1e40af]">
+                        Actualizar
+                    </button>
+                </form>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
