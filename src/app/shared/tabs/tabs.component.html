@@ -1,12 +1,14 @@
 <div class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 ">
     <ul class="flex flex-wrap -mb-px">
-        <li class="mr-2">
-            <a href="#" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 ">
-                Home
-            </a>
-        </li>
-        <li class="mr-2">
-            <a href="#" class="inline-block p-4 text-purple-600 border-b-2 border-purple-600 rounded-t-lg active " aria-current="page">
+        @for(item of tabsItems; track $index){
+            <li class="mr-2">
+                <a href="#" class="inline-block p-4 border-b-2  rounded-t-lg hover:text-gray-600 hover:border-gray-300 " [routerLink]="item.path" routerLinkActive="text-purple-600  border-purple-600">
+                    {{item.title}}
+                </a>
+            </li>
+        }
+        <!-- <li class="mr-2">
+            <a href="#" class="inline-block p-4 text-purple-600 border-b-2 border-purple-600 rounded-t-lg">
                 Agregar Producto
             </a>
         </li>
@@ -14,6 +16,6 @@
             <a href="#" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 ">
                 Listado Producto
             </a>
-        </li>
+        </li> -->
     </ul>
 </div>

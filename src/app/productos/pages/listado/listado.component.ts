@@ -8,6 +8,6 @@ import { CommonModule } from '@angular/common';
   templateUrl: './listado.component.html',
   styleUrl: './listado.component.css'
 })
-export class ListadoComponent {
+export default class ListadoComponent {
 
 }

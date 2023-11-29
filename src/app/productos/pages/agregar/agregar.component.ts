@@ -8,6 +8,6 @@ import { CommonModule } from '@angular/common';
   templateUrl: './agregar.component.html',
   styleUrl: './agregar.component.css'
 })
-export class AgregarComponent {
+export default class AgregarComponent {
 
 }
