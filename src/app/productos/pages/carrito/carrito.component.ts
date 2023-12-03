@@ -8,6 +8,6 @@ import { CommonModule } from '@angular/common';
   templateUrl: './carrito.component.html',
   styleUrl: './carrito.component.css'
 })
-export class CarritoComponent {
+export default class CarritoComponent {
 
 }
