@@ -1,12 +1,27 @@
 import { Routes } from '@angular/router';
 import { MainComponent } from './productos/main.component';
 import { ProfileSettingComponent } from './components/profile/profile-setting/profile-setting.component';
+import { MainAuthComponent } from './auth/main-auth.component';
 
 export const routes: Routes = [
 
     {
         path:'account',
-        component:ProfileSettingComponent
+        component:MainAuthComponent,
+        children:[
+            {
+                path:'login',
+                loadComponent: () => import('./auth/pages/login/login.component'),
+            },
+            {
+                path:'registro',
+                loadComponent: () => import('./auth/pages/registro/registro.component'),
+            },
+            {
+                path:'setting',
+                component: ProfileSettingComponent,
+            }
+        ]
     },
     {
         path:'productos',
